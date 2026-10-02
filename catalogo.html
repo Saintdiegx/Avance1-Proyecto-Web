@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Tienda de Mascotas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+            <img src="logo.png" alt="Logo" class="logo-navbar">
+            <span>PetHaven</span>
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Catálogo</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <aside class="col-md-3">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white fw-bold">FILTROS</div>
+                    <div class="card-body">
+                        <h6 class="mt-2">Tipo de mascota</h6>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" id="check-perro" value="perro"> 
+                            <label class="form-check-label" for="check-perro">Perros</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" id="check-gato" value="gato"> 
+                            <label class="form-check-label" for="check-gato">Gatos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" id="check-ave" value="ave">
+                            <label class="form-check-label" for="check-ave">Aves</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" id="check-hamster" value="hamster">
+                            <label class="form-check-label" for="check-hamster">Hámsteres</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filter-checkbox" type="checkbox" id="check-tortuga" value="tortuga">
+                            <label class="form-check-label" for="check-tortuga">Tortugas</label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col-md-9">
+                <div class="row g-3" id="product-list">
+                    <div class="col-md-4 product-card" data-category="perro"><div class="card shadow-sm h-100"><img src="https://melopetandgarden.com/cdn/shop/files/93500000100ProPetAdult1kg.jpg?v=1700075426" class="card-img-top" alt="Alimento Premium para Perro"><div class="card-body text-center"><h6>Alimento Premium para Perro</h6><p class="fw-bold text-danger">$45.00</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="gato"><div class="card shadow-sm h-100"><img src="https://www.lcstorecrc.com/cdn/shop/files/610-Z5s7D8L.jpg?v=1773501727&width=1920" class="card-img-top" alt="Torre Rascador para Gato"><div class="card-body text-center"><h6>Torre Rascador para Gato</h6><p class="fw-bold text-danger">$85.00</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="ave"><div class="card shadow-sm h-100"><img src="assets/jaula-aves.jpg" class="card-img-top" alt="Jaula para Aves"><div class="card-body text-center"><h6>Jaula para Aves</h6><p class="fw-bold text-danger">$35.00</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="hamster"><div class="card shadow-sm h-100"><img src="assets/casa-hamster.jpg" class="card-img-top" alt="Casa de Juego para Hámster"><div class="card-body text-center"><h6>Casa de Juego para Hámster</h6><p class="fw-bold text-danger">$20.00</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="perro"><div class="card shadow-sm h-100"><img src="https://ss345.liverpool.com.mx/xl/1142563491.jpg" class="card-img-top" alt="Collar Ajustable para Perro"><div class="card-body text-center"><h6>Collar Ajustable para Perro</h6><p class="fw-bold text-danger">$12.00</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="gato"><div class="card shadow-sm h-100"><img src="https://i5.walmartimages.com/asr/d806894c-459a-4153-b386-c05625ee1fcf.c166107ef4938a63b7e94f4cd68f596a.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" class="card-img-top" alt="Juguete Interactivo para Gato"><div class="card-body text-center"><h6>Juguete Interactivo para Gato</h6><p class="fw-bold text-danger">$15.00</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="ave"><div class="card shadow-sm h-100"><img src="assets/alimento-aves.jpg" class="card-img-top" alt="Alimento para Aves"><div class="card-body text-center"><h6>Alimento para Aves</h6><p class="fw-bold text-danger">$9.50</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="tortuga"><div class="card shadow-sm h-100"><img src="assets/habitat-tortuga.jpg" class="card-img-top" alt="Hábitat para Tortugas"><div class="card-body text-center"><h6>Hábitat para Tortugas</h6><p class="fw-bold text-danger">$70.00</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="tortuga"><div class="card shadow-sm h-100"><img src="assets/alimento-tortuga-reptomin.jpg" class="card-img-top" alt="Alimento ReptoMin para Tortugas"><div class="card-body text-center"><h6>Alimento ReptoMin para Tortugas</h6><p class="fw-bold text-danger">$11.00</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="tortuga"><div class="card shadow-sm h-100"><img src="assets/alimento-tortuga-bites.jpg" class="card-img-top" alt="Turtle Bites Premium"><div class="card-body text-center"><h6>Turtle Bites Premium</h6><p class="fw-bold text-danger">$14.00</p></div></div></div>
+                    <div class="col-md-4 product-card" data-category="perro"><div class="card shadow-sm h-100"><img src="assets/juguete-perro.jpg" class="card-img-top" alt="Juguete de Goma para Perro"><div class="card-body text-center"><h6>Juguete de Goma para Perro</h6><p class="fw-bold text-danger">$10.00</p></div></div></div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer-custom text-center">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <h5>Enlaces Internos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="catalogo.html">Catálogo de Productos</a></li>
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sitios Aliados</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.utp.ac.pa" target="_blank">Universidad Tecnológica de Panamá</a></li>
+                        <li><a href="https://www.w3.org" target="_blank">W3C HTML5 Standard</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociales</h5>
+                    <p>Síguenos para más consejos sobre tu mascota.</p>
+                    <div class="social-icons" aria-label="Redes sociales">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <img src="assets/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <img src="assets/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X">
+                            <img src="assets/x.jpg" alt="X">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <p class="mb-0">&copy; 2026 Laboratorio 3 - Ingeniería Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const filters = document.querySelectorAll(".filter-checkbox");
+            const products = document.querySelectorAll(".product-card");
+
+            function updateFilters() {
+                const selected = Array.from(filters).filter(f => f.checked).map(f => f.value);
+                products.forEach(product => {
+                    const category = product.getAttribute("data-category");
+                    product.style.display = selected.length === 0 || selected.includes(category) ? "block" : "none";
+                });
+            }
+            filters.forEach(filter => filter.addEventListener("change", updateFilters));
+        });
+    </script>
+</body>
+</html>
